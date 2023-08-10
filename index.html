@@ -6,14 +6,42 @@
     <title>Jugá con Dibu</title>
 </head>
 <body>
-    <header>
+    <h1>JUGÁ CON "EL DIBU" ⚽⚽⚽</h1>
 
-    </header>
-    <main>
+        <section id="display-dibu">
+            <img src="./img/frente.jpg" alt="Emiliano Dibu Martinez">
+        </section>
+        
+        <section id="direccion">
+            <h2>ELIGE ADÓNDE QUERÉS PATEAR</h2>
+            <label for="izquierda">Izquierda</label>
+            <input type="radio" name="patada" id="izquierda">
+            
+            <label for="centro">Centro</label>
+            <input type="radio" name="patada" id="centro">
+            
+            <label for="derecha">Derecha</label>
+            <input type="radio" name="patada" id="derecha">
 
-    </main>
-    <footer>
-
-    </footer>
+            <button id="direccion__boton">Seleccionar</button>
+        </section>
+        
+        <section id="jugada">
+            <p>Pateaste a <span id="jugada__jugador"></span></p>
+            <p>Dibu volará <span id="jugada__dibu"></span></p>
+            <p>Gana: <span id="jugada__ganador"></span></p>
+        </section>
+        
+        <section id="contador">
+            <h2>RESULTADO</h2>
+            <p>Goles:<span>0</span></p>
+            <p>Atajadas:<span>0</span></p>
+            <p>El ganador es: <span id="contador__ganador"></span></p>
+            
+        </section>
+        
+        <section id="reiniciar">
+            <button id="reiniciar__boton">Volver a jugar</button>
+        </section>
 </body>
 </html>
