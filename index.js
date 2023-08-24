@@ -11,6 +11,10 @@ botonCentro.addEventListener("click", disparoCentro);
 let botonDerecha = document.getElementById("direccion__derecha");
 botonDerecha.addEventListener("click", disparoDerecha);
 
+let botonReiniciar = document.getElementById("reiniciar__boton");
+botonReiniciar.addEventListener("click", reiniciarJuego);
+
+
 function disparoIzquierda() {
     disparoJugador = "IZQUIERDA";
     atajaDibu();
@@ -124,8 +128,38 @@ function partido() {
         atajadas++;
         spanContadorAtajadas.innerHTML = atajadas;
     }
+
+    revisarGanador();
 }
 
+function revisarGanador() {
+    if(goles == 5){
+        let ganaJugador = document.getElementById("contador__ganador");
+        ganaJugador.innerHTML = `<p>Vos!</p>`;
+        let botonIzquierda = document.getElementById("direccion__izquierda");
+        botonIzquierda.disabled = true;
+        let botonCentro = document.getElementById("direccion__centro");
+        botonCentro.disabled = true;
+        let botonDerecha = document.getElementById("direccion__derecha");
+        botonDerecha.disabled = true;
+
+    }else if(atajadas == 5){
+        let ganaDibu = document.getElementById("contador__ganador");
+        ganaDibu.innerHTML = `<p>Dibu!</p>`;
+        let botonIzquierda = document.getElementById("direccion__izquierda");
+        botonIzquierda.disabled = true;
+        let botonCentro = document.getElementById("direccion__centro");
+        botonCentro.disabled = true;
+        let botonDerecha = document.getElementById("direccion__derecha");
+        botonDerecha.disabled = true;
+    };
+
+    
+}
+
+function reiniciarJuego() {
+    location.reload()
+}
 
 
 
