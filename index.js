@@ -14,6 +14,9 @@ botonDerecha.addEventListener("click", disparoDerecha);
 let botonReiniciar = document.getElementById("reiniciar__boton");
 botonReiniciar.addEventListener("click", reiniciarJuego);
 
+let sectionReiniciar = document.getElementById("reiniciar");
+sectionReiniciar.style.display = "none";
+
 
 function disparoIzquierda() {
     disparoJugador = "IZQUIERDA";
@@ -142,6 +145,8 @@ function revisarGanador() {
         botonCentro.disabled = true;
         let botonDerecha = document.getElementById("direccion__derecha");
         botonDerecha.disabled = true;
+        let sectionReiniciar = document.getElementById("reiniciar");
+        sectionReiniciar.style.display = "block";
 
     }else if(atajadas == 5){
         let ganaDibu = document.getElementById("contador__ganador");
@@ -152,6 +157,8 @@ function revisarGanador() {
         botonCentro.disabled = true;
         let botonDerecha = document.getElementById("direccion__derecha");
         botonDerecha.disabled = true;
+        let sectionReiniciar = document.getElementById("reiniciar");
+        sectionReiniciar.style.display = "block";
     };
 
     
