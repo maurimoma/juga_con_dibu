@@ -61,7 +61,7 @@ function partido() {
     if (disparoJugador == "IZQUIERDA" && respuestaDibu == "IZQUIERDA") {
         imagen.innerHTML = `
         <p>ATAJA DIBU!!!!</p>
-        <img src="./img/izquierda.jpg"/>
+        <img class="foto-partido" src="./img/izquierda.jpg"/>
         `
         sectionJugada.appendChild(imagen);
         atajadas++;
@@ -69,7 +69,7 @@ function partido() {
     }else if(disparoJugador == "CENTRO" && respuestaDibu == "IZQUIERDA"){
         imagen.innerHTML = `
         <p>GOL!!!!</p>
-        <img src="./img/izquierda_centro.jpg"/>
+        <img class="foto-partido" src="./img/izquierda_centro.jpg" />
         `
         sectionJugada.appendChild(imagen);
         goles++;
@@ -77,7 +77,7 @@ function partido() {
     }else if (disparoJugador == "DERECHA" && respuestaDibu == "IZQUIERDA") {
         imagen.innerHTML = `
         <p>GOL!!!!</p>
-        <img src="./img/izquierda_derecha.jpg"/>
+        <img class="foto-partido" src="./img/izquierda_derecha.jpg"/>
         `
         sectionJugada.appendChild(imagen);
         goles++;
@@ -85,7 +85,7 @@ function partido() {
     }else if (disparoJugador == "IZQUIERDA" && respuestaDibu == "CENTRO") {
         imagen.innerHTML = `
         <p>GOL!!!!</p>
-        <img src="./img/centro_izquierda.jpg"/>
+        <img class="foto-partido" src="./img/centro_izquierda.jpg"/>
         `
         sectionJugada.appendChild(imagen);
         goles++;
@@ -93,7 +93,7 @@ function partido() {
     }else if (disparoJugador == "CENTRO" && respuestaDibu == "CENTRO") {
         imagen.innerHTML = `
         <p>ATAJA DIBU!!!!</p>
-        <img src="./img/centro.jpg"/>
+        <img class="foto-partido" src="./img/centro.jpg"/>
         `
         sectionJugada.appendChild(imagen);
         atajadas++;
@@ -101,7 +101,7 @@ function partido() {
     }else if (disparoJugador == "DERECHA" && respuestaDibu == "CENTRO") {
         imagen.innerHTML = `
         <p>GOL!!!!</p>
-        <img src="./img/centro_derecha.jpg"/>
+        <img class="foto-partido" src="./img/centro_derecha.jpg"/>
         `
         sectionJugada.appendChild(imagen);
         goles++;
@@ -109,15 +109,15 @@ function partido() {
     }else if (disparoJugador == "IZQUIERDA" && respuestaDibu == "DERECHA") {
         imagen.innerHTML = `
         <p>GOL!!!!</p>
-        <img src="./img/derecha_izquierda.jpg"/>
+        <img class="foto-partido" src="./img/derecha_izquierda.jpg"/>
         `
         sectionJugada.appendChild(imagen);
         goles++;
         spanContadorGoles.innerHTML = goles;
     }else if (disparoJugador == "CENTRO" && respuestaDibu == "DERECHA") {
         imagen.innerHTML = `
-        <p>ATAJA DIBU!!!!</p>
-        <img src="./img/derecha_centro.jpg"/>
+        <p>GOL!!!!</p>
+        <img class="foto-partido" src="./img/derecha_centro.jpg"/>
         `
         sectionJugada.appendChild(imagen);
         atajadas++;
@@ -125,7 +125,7 @@ function partido() {
     }else{
         imagen.innerHTML = `
         <p>ATAJA DIBU!!!!</p>
-        <img src="./img/derecha.jpg"/>
+        <img class="foto-partido" src="./img/derecha.jpg"/>
         `
         sectionJugada.appendChild(imagen);
         atajadas++;

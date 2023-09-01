@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jugá con Dibu</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>JUGÁ CON "EL DIBU" ⚽⚽⚽</h1>
-
+    <section id="contenedor">
         <section id="display-dibu">
-            <img src="./img/frente.jpg" alt="Emiliano Dibu Martinez">
+            <h1>JUGÁ CON "EL DIBU"</h1>
+            <img src="./img/frente.jpg" alt="Emiliano Dibu Martinez" class="display-dibu__foto">
         </section>
-        
+            
+        <section id="jugada">
+        </section>
+            
         <section id="direccion">
             <h2>ELIGE ADÓNDE QUERÉS PATEAR</h2>
             <p>
@@ -19,33 +23,31 @@
                 <button id="direccion__centro">CENTRO</button>
                 <button id="direccion__derecha">DERECHA</button>
             </p>
-            <!-- <label for="izquierda">Izquierda</label>
-            <input type="radio" name="patada" id="izquierda">
-            
-            <label for="centro">Centro</label>
-            <input type="radio" name="patada" id="centro">
-            
-            <label for="derecha">Derecha</label>
-            <input type="radio" name="patada" id="derecha">
+                <!-- <label for="izquierda">Izquierda</label>
+                <input type="radio" name="patada" id="izquierda">
+                
+                <label for="centro">Centro</label>
+                <input type="radio" name="patada" id="centro">
+                
+                <label for="derecha">Derecha</label>
+                <input type="radio" name="patada" id="derecha">
 
-            <button id="direccion__boton">Seleccionar</button> -->
-        </section>
+                <button id="direccion__boton">Seleccionar</button> -->
         
-        <section id="jugada">
-           
-        </section>
-        
-        <section id="contador">
-            <h2>RESULTADO</h2>
-            <p>Goles: <span id="contador__goles">0</span></p>
-            <p>Atajadas: <span id="contador__atajadas">0</span></p>
-            <p>El ganador es: <span id="contador__ganador"></span></p>
             
         </section>
-        
-        <section id="reiniciar">
-            <button id="reiniciar__boton">Volver a jugar</button>
+            
+        <section id="contador">
+                <h2>RESULTADO</h2>
+                <p>Goles: <span id="contador__goles">0</span></p>
+                <p>Atajadas: <span id="contador__atajadas">0</span></p>
+                <p>El ganador es: <span id="contador__ganador"></span></p>
         </section>
-        <script src="index.js"></script>
+            
+        <section id="reiniciar">
+                <button id="reiniciar__boton">Volver a jugar</button>
+        </section>
+            <script src="index.js"></script>
+    </section>
 </body>
 </html>
