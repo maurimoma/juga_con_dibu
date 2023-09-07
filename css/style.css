@@ -2,38 +2,84 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url("/img/fondo.jpg");
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
   }
+
+#confeti{
+  width: 15px;
+  height: 15px;
+  background-color: rgb(49, 190, 247);
+  box-shadow: 40px -50px blue,
+              120px 70px rgb(102, 215, 250),
+              -30px 50px blue,
+              240px 50px blue,
+              310px -110px rgb(102, 215, 250),
+              -120px 70px rgb(102, 215, 250),
+              340px 100px rgb(102, 208, 250),
+              420px 30px rgb(231, 245, 35),
+              -230px 50px rgb(229, 250, 45),
+              -400px 10px rgb(102, 208, 250),
+              -500px 20px blue,
+              -600px -30px rgb(102, 208, 250),
+              550px -30px rgb(102, 208, 250),
+              -630px 70px rgb(229, 250, 45);
+}
 
 #contenedor {
     margin-top: 10vh;
     background-color: white;
-    width: 85%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
 h1 {
-    text-align: center;
-    width: 80%;
-    font-size: 30px;
+    text-align: end;
+    width: 70%;
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: #318aac;
+    font-size: 3.5rem;
   }
 
 #display-dibu{
     width: 80%;
     display: flex;
     padding: 5vh 0;
+    margin-top: 20vh;
 }
 
-.display-dibu__foto{
+#contenedorDos{
+  display: flex;
+  width: 90%;
+}
+
+#jugada__foto{
   height: 15vh;
+  background-color: aqua;
 }
 
-h2, p {
+#direccion__titulo {
+  text-align: center;
+}
+
+#direccion__botones{
+  text-align: start;
+}
+
+#contador{
+  width: 50%;
+}
+
+#contador__titulo{
+  text-align: center;
+}
+
+#contador_texto{
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -42,7 +88,17 @@ div {
   flex-direction: column;
   align-items: center;
 }
+
 .foto-partido{
     width: 40%;
 }
 
+
+#direccion__izquierda, #direccion__centro, #direccion__derecha {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: #318aac;
+  
+  
+}

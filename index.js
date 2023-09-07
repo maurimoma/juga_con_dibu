@@ -120,7 +120,7 @@ function partido() {
         <img class="foto-partido" src="./img/derecha_centro.jpg"/>
         `
         sectionJugada.appendChild(imagen);
-        atajadas++;
+        goles++;
         spanContadorAtajadas.innerHTML = atajadas;
     }else{
         imagen.innerHTML = `

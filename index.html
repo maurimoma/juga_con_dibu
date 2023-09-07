@@ -5,47 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jugá con Dibu</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
 </head>
 <body>
     <section id="contenedor">
+        <div id="confeti">
+            <P></P>
+        </div>
         <section id="display-dibu">
             <h1>JUGÁ CON "EL DIBU"</h1>
-            <img src="./img/frente.jpg" alt="Emiliano Dibu Martinez" class="display-dibu__foto">
+            <img src="./img/frente.jpg" alt="Emiliano Dibu Martinez" id="jugada__foto">
         </section>
             
         <section id="jugada">
-        </section>
             
-        <section id="direccion">
-            <h2>ELIGE ADÓNDE QUERÉS PATEAR</h2>
-            <p>
-                <button id="direccion__izquierda">IZQUIERDA</button>
-                <button id="direccion__centro">CENTRO</button>
-                <button id="direccion__derecha">DERECHA</button>
-            </p>
-                <!-- <label for="izquierda">Izquierda</label>
-                <input type="radio" name="patada" id="izquierda">
-                
-                <label for="centro">Centro</label>
-                <input type="radio" name="patada" id="centro">
-                
-                <label for="derecha">Derecha</label>
-                <input type="radio" name="patada" id="derecha">
+        </section>
 
-                <button id="direccion__boton">Seleccionar</button> -->
-        
-            
-        </section>
-            
-        <section id="contador">
-                <h2>RESULTADO</h2>
-                <p>Goles: <span id="contador__goles">0</span></p>
-                <p>Atajadas: <span id="contador__atajadas">0</span></p>
-                <p>El ganador es: <span id="contador__ganador"></span></p>
-        </section>
-            
-        <section id="reiniciar">
-                <button id="reiniciar__boton">Volver a jugar</button>
+        <section id="contenedorDos">
+            <section id="direccion">
+                <h2 id="direccion__titulo">ELIGE ADÓNDE QUERÉS PATEAR</h2>
+                <p id="direccion__botones">
+                    <button id="direccion__izquierda">IZQUIERDA</button>
+                    <button id="direccion__centro">CENTRO</button>
+                    <button id="direccion__derecha">DERECHA</button>
+                </p>
+            </section>
+            <section id="contador">
+                    <h2 id="contador__titulo">RESULTADO</h2>
+                    <p id="contador_texto">Goles: <span id="contador__goles">0</span> | Atajadas: <span id="contador__atajadas">0</span></p>
+                    
+                    <p id="contador_texto">El ganador es: <span id="contador__ganador"></span></p>
+                    <section id="reiniciar">
+                        <button id="reiniciar__boton">Volver a jugar</button>
+                    </section>
+            </section>
         </section>
             <script src="index.js"></script>
     </section>
